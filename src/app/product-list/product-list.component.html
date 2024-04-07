@@ -1,1 +1,14 @@
-<p>product-list works!</p>
+<div class="row row-cols-3">
+  <div *ngFor="let product of productItems; let i = index">
+    <div class="card" style="width: 22rem">
+      <img src="{{ product.image }}" class="card-img-top" alt="A plant" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <h6 class="card-title">{{ product.price }}</h6>
+        <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
+        <a href="#" class="btn btn-success">Add to cart</a>
+      </div>
+    </div>
+  </div>
+</div>
