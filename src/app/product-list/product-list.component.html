@@ -6,12 +6,15 @@
         <h5 class="card-title">{{ product.name }}</h5>
         @if (product.availability == true){
         <p class="card-text">{{ product.description }}</p>
-        <h6 class="card-title">{{ product.price }}</h6>
-        <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
-        <button (click)="onAddToCart()" class="btn btn-success">
-          Add to cart</button
-        >} @else {
-        <p>Not Available</p>
+        <h6 class="card-text text-end">{{ product.price }} €</h6>
+        <div class="text-center">
+          <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
+          <button (click)="onAddToCart()" class="btn btn-success">
+            Add to cart
+          </button>
+        </div>
+        } @else {
+        <h6 class="text-center">Not Available</h6>
         }
       </div>
     </div>
