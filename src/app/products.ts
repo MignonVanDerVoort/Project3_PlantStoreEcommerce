@@ -6,7 +6,7 @@ export const products: IProduct[] = [
     price: 40,
     description: 'asd',
     image: './assets/images/monstera.jpg',
-    availability: true,
+    availability: false,
   },
   {
     name: 'Orchid',
@@ -27,7 +27,7 @@ export const products: IProduct[] = [
     price: 15,
     description: 'asd',
     image: './assets/images/lillies.jpg',
-    availability: true,
+    availability: false,
   },
   {
     name: 'Palm',
