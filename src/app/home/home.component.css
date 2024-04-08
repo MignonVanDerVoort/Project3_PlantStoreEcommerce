@@ -1,0 +1,39 @@
+.hero-section {
+  height: 60vh;
+  background-size: cover;
+  background-image: url("../../assets/images/leaves.jpg");
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d74e43;
+}
+
+.main {
+  font-family: "Nothing You Could Do", cursive;
+  width: 80%;
+  text-align: center;
+  font-size: 60px;
+  margin: auto;
+  padding: 50px 0px;
+}
