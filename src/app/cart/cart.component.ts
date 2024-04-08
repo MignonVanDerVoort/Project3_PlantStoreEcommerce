@@ -25,11 +25,11 @@ export class CartComponent implements OnInit {
     this.newTotal = this.total + this.serviceFee;
 
     if (this.newTotal > 40) {
-      this.discount = this.newTotal * 0.15;
+      this.discount = (Math.floor(this.newTotal * 0.15 * 100) / 100) * -1;
     } else {
       this.discount = 0;
     }
 
-    this.finalTotal = this.newTotal - this.discount;
+    this.finalTotal = this.newTotal + this.discount;
   }
 }

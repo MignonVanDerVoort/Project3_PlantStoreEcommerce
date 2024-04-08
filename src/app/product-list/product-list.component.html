@@ -1,21 +1,26 @@
-<div class="row row-cols-3">
-  <div *ngFor="let product of productItems; let i = index">
-    <div class="card" style="width: 22rem">
-      <img src="{{ product.image }}" class="card-img-top" alt="A plant" />
-      <div class="card-body">
-        <h5 class="card-title">{{ product.name }}</h5>
-        @if (product.availability == true){
-        <p class="card-text">{{ product.description }}</p>
-        <h6 class="card-text text-end">{{ product.price }} €</h6>
-        <div class="text-center">
-          <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
-          <button (click)="onAddToCart()" class="btn btn-success">
-            Add to cart
-          </button>
+<div class="container">
+  <div class="row">
+    <div
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let product of productItems; let i = index"
+    >
+      <div class="card border-success border-3" style="width: 22rem">
+        <img src="{{ product.image }}" class="card-img-top" alt="A plant" />
+        <div class="card-body">
+          <h4 class="card-title text-center">{{ product.name }}</h4>
+          @if (product.availability == true){
+          <p class="card-text">{{ product.description }}</p>
+          <h6 class="card-text text-end">{{ product.price }} €</h6>
+          <div class="text-center">
+            <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
+            <button (click)="onAddToCart(product)" class="btn btn-success">
+              Add to cart
+            </button>
+          </div>
+          } @else {
+          <h6 class="text-center">Not Available</h6>
+          }
         </div>
-        } @else {
-        <h6 class="text-center">Not Available</h6>
-        }
       </div>
     </div>
   </div>
