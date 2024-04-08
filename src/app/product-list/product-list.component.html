@@ -9,7 +9,7 @@
         <div class="card-body">
           <h4 class="card-title text-center">{{ product.name }}</h4>
           @if (product.availability == true){
-          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text text-center">{{ product.smallD }}</p>
           <h6 class="card-text text-end">{{ product.price }} €</h6>
           <div class="text-center">
             <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
