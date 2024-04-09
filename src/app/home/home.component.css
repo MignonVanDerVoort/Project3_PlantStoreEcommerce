@@ -1,9 +1,10 @@
 .hero-section {
-  height: 60vh;
+  height: 70vh;
   background-size: cover;
-  background-image: url("../../assets/images/leaves.jpg");
+  background-image: url("../../assets/images/flowers.jpg");
   background-position: center;
-  color: #fff;
+  opacity: 0.83;
+  color: #f33d00;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,10 +13,10 @@
 }
 
 .hero-text {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
 }
 
 .button {

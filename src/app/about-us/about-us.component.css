@@ -1,8 +1,8 @@
-.main {
+.p {
   font-family: "Nothing You Could Do", cursive;
-  width: 80%;
-  text-align: center;
-  font-size: 50px;
-  margin: auto;
-  padding: 30px;
+  font-size: 30px;
+}
+
+img {
+  border-radius: 40%;
 }
